@@ -33,8 +33,8 @@ PaletteForge menggunakan model ruang warna HSL (*Hue, Saturation, Lightness*):
 1. Pastikan PHP (>= 8.2), Composer, dan Node.js terpasang.
 2. Clone repositori:
    ```bash
-   git clone https://github.com/AhmadNurHidayat-23/paletteforge-color-palette-generator.git
-   cd paletteforge-color-palette-generator
+   git clone https://github.com/AhmadNurHidayat-23/paletteforge-generator-palet-warna.git
+   cd paletteforge-generator-palet-warna
    ```
 3. Salin berkas lingkungan dan pasang dependensi:
    ```bash

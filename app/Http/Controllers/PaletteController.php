@@ -70,3 +70,4 @@ class PaletteController extends Controller
         ]);
     }
 }
+

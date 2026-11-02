@@ -85,3 +85,4 @@ class PaletteGeneratorServiceTest extends TestCase
         $this->assertStringEndsWith('}', $css);
     }
 }
+

@@ -44,3 +44,4 @@ class GeneratePaletteRequest extends FormRequest
         ];
     }
 }
+
