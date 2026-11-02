@@ -1,0 +1,209 @@
+/* Hero Section */
+.pf-hero {
+  padding: 4rem 0 2.5rem;
+  border-bottom: 1px solid var(--pf-border);
+}
+
+.pf-hero-content {
+  max-width: 780px;
+}
+
+.pf-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  background: #f4f4f5;
+  border: 1px solid var(--pf-border);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.25rem;
+}
+
+.pf-tag-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+
+.pf-hero-headline {
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: var(--pf-text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.pf-hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--pf-text-secondary);
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
+.pf-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Swatches Grid */
+.pf-palette-section {
+  padding: 3rem 0;
+}
+
+.pf-palette-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--pf-border);
+}
+
+.pf-palette-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pf-palette-scheme-badge {
+  background-color: #18181b;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--pf-radius-sm);
+}
+
+.pf-palette-hint {
+  font-size: 0.85rem;
+  color: var(--pf-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pf-kbd {
+  background: #f4f4f5;
+  border: 1px solid var(--pf-border);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-family: var(--pf-font-mono);
+  color: var(--pf-text-primary);
+}
+
+.pf-swatches-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background-color: var(--pf-border);
+  border: 1px solid var(--pf-border);
+  border-radius: var(--pf-radius-md);
+  overflow: hidden;
+  box-shadow: var(--pf-shadow-subtle);
+}
+
+.pf-swatch {
+  min-height: 400px;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  background-color: var(--swatch-bg, #ffffff);
+  color: var(--swatch-color, #0f172a);
+}
+
+.pf-swatch:hover {
+  z-index: 5;
+  transform: translateY(-4px);
+  box-shadow: var(--pf-shadow-hover);
+}
+
+.pf-swatch-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pf-swatch-index {
+  font-family: var(--pf-font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.pf-swatch-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+
+.pf-badge-base {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--pf-radius-sm);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pf-swatch-middle {
+  margin: auto 0;
+}
+
+.pf-swatch-hex {
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  font-family: var(--pf-font-mono);
+  margin-bottom: 0.5rem;
+}
+
+.pf-swatch-meta {
+  font-size: 0.75rem;
+  font-family: var(--pf-font-mono);
+  opacity: 0.75;
+  line-height: 1.4;
+}
+
+.pf-swatch-bottom {
+  margin-top: 1.5rem;
+}
+
+.pf-btn-copy-swatch {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.8rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--pf-radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pf-btn-copy-swatch:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.pf-section-divider {
+  margin-bottom: 3.5rem;
+}

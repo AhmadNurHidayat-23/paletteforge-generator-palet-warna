@@ -1,0 +1,262 @@
+:root {
+  --pf-bg: #fbfbfb;
+  --pf-surface: #ffffff;
+  --pf-border: #e4e4e7;
+  --pf-border-dark: #18181b;
+  --pf-text-primary: #09090b;
+  --pf-text-secondary: #71717a;
+  --pf-text-muted: #a1a1aa;
+  --pf-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --pf-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --pf-radius-sm: 4px;
+  --pf-radius-md: 8px;
+  --pf-shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --pf-shadow-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--pf-font-sans);
+  background-color: var(--pf-bg);
+  color: var(--pf-text-primary);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pf-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-main {
+  flex: 1;
+}
+
+.pf-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header & Navbar */
+.pf-header {
+  border-bottom: 1px solid var(--pf-border);
+  background-color: var(--pf-surface);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.pf-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.pf-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--pf-text-primary);
+  text-decoration: none;
+}
+
+.pf-brand-mark {
+  width: 13px;
+  height: 13px;
+  background-color: var(--pf-text-primary);
+}
+
+.pf-brand-dot {
+  color: #ef4444;
+}
+
+.pf-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pf-nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--pf-text-secondary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.pf-nav-link:hover,
+.pf-nav-link-active {
+  color: var(--pf-text-primary);
+}
+
+/* Buttons */
+.pf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--pf-font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.75rem 1.4rem;
+  border-radius: var(--pf-radius-sm);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.pf-btn-lg {
+  padding: 0.9rem 1.75rem;
+  font-size: 1rem;
+}
+
+.pf-btn-sm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+}
+
+.pf-btn-primary {
+  background-color: var(--pf-text-primary);
+  color: #ffffff;
+}
+
+.pf-btn-primary:hover {
+  background-color: #27272a;
+}
+
+.pf-btn-secondary {
+  background-color: #f4f4f5;
+  color: var(--pf-text-primary);
+  border-color: var(--pf-border);
+}
+
+.pf-btn-secondary:hover {
+  background-color: #e4e4e7;
+}
+
+.pf-btn-outline {
+  background-color: transparent;
+  color: var(--pf-text-primary);
+  border-color: var(--pf-border-dark);
+}
+
+.pf-btn-outline:hover {
+  background-color: var(--pf-text-primary);
+  color: #ffffff;
+}
+
+.pf-btn-ghost {
+  background-color: transparent;
+  color: var(--pf-text-secondary);
+}
+
+.pf-btn-ghost:hover {
+  color: var(--pf-text-primary);
+  background-color: #f4f4f5;
+}
+
+.pf-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+}
+
+/* Eyebrow & Badge */
+.pf-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pf-text-muted);
+}
+
+/* Footer & Toast */
+.pf-footer {
+  border-top: 1px solid var(--pf-border);
+  background-color: var(--pf-surface);
+  padding: 3rem 0 2rem;
+  margin-top: auto;
+}
+
+.pf-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pf-footer-brand {
+  max-width: 480px;
+}
+
+.pf-footer-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--pf-text-secondary);
+  margin-top: 0.6rem;
+}
+
+.pf-footer-meta {
+  text-align: right;
+}
+
+.pf-footer-copyright {
+  font-size: 0.85rem;
+  color: var(--pf-text-secondary);
+}
+
+.pf-footer-sub {
+  font-size: 0.75rem;
+  color: var(--pf-text-muted);
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pf-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #09090b;
+  color: #ffffff;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--pf-radius-sm);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #27272a;
+}
+
+.pf-toast.pf-toast-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.pf-toast-icon {
+  color: #10b981;
+}
+
+.pf-toast-message {
+  font-size: 0.88rem;
+  font-weight: 500;
+}
